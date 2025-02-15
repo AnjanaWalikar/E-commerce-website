@@ -1,0 +1,304 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 94, 37);
+}
+.logo{
+    font-size: 40px;
+    
+}
+
+nav{
+    margin: 20px;
+    padding: 10px;
+}
+
+nav a{
+    margin-right: 20px;
+    font-size: 25px;
+}
+nav b{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.image{
+    width: 20%;
+    height: 20px;
+}
+.Container{
+    display: flex;
+    background-color: orangered;
+}
+.img_Container{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+}
+.cc{
+    margin: 30px;
+    background-color: rgb(231, 157, 104);
+}
+.cc img{
+    width: 200px;
+    height: 300px;
+
+    
+}
+.carousel img{
+    width: 1300px;
+    height: 400px;
+    padding: 20px;
+}
+.products{
+    text-align: center;
+}
+.logos{
+    font-size: 40px;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.row1{
+    display: flex;
+    margin: 1%;
+}
+
+
+
+.products button{
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 15px;
+}
+.products img{
+    width: 100px;
+    height: 50px;
+    grid-template-columns: repeat(2, 40%);
+}
+
+.product list{
+    width: 20px;
+    height: 20px ;
+    padding: 20px;
+
+}
+nav a{
+    padding: 8px 12px;
+}
+
+.cart-item{
+    width: 100px;
+    height: 50px;
+    grid-template-columns: repeat(2, 40%);
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.seach-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#productSearch {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sortOptions {
+    padding: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-item h2 {
+    font-size: 16px;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.product-item button:hover {
+    background-color: #0056b3;
+}
+
+
+h2 {
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cart-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.cart-item h3 {
+    font-size: 18px;
+    flex: 1;
+}
+
+.cart-item h2 {
+    font-size: 16px;
+    color: #28a745;
+}
+
+.cart-item button {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #c82333;
+}
+
+
+.subtotal {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #productList {
+        justify-content: center;
+    }
+
+    .product-item {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .seach-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #productList {
+        gap: 15px;
+    }
+
+    .product-item {
+        width: 180px;
+    }
+}
